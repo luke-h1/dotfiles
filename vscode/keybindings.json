@@ -1,29 +1,16 @@
-// Place your key bindings in this file to override the defaults
+// VS Code keybindings (Cursor AI bindings live in cursor/keybindings.json)
 [
-    {
-        "key": "cmd+i",
-        "command": "composerMode.agent"
+  {
+    "key": "cmd+l",
+    "command": "expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u001b\r"
     },
-    {
-        "key": "cmd+shift+l",
-        "command": "aichat.newchataction"
-    },
-    {
-        "key": "cmd+l",
-        "command": "expandLineSelection",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "cmd+p",
-        "command": "-expandLineSelection",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+enter",
-        "command": "workbench.action.terminal.sendSequence",
-        "args": {
-            "text": "\u001b\r"
-        },
-        "when": "terminalFocus"
-    }
+    "when": "terminalFocus"
+  }
 ]

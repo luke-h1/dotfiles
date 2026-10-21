@@ -1,0 +1,22 @@
+{
+  "name": "cursor-dark",
+  "displayName": "Cursor Dark",
+  "description": "Cursor Dark theme, vendored for VS Code to match Cursor.",
+  "version": "1.0.0",
+  "publisher": "luke-h1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cursor Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cursor-dark-color-theme.json"
+      }
+    ]
+  }
+}

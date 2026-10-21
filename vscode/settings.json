@@ -1,0 +1,89 @@
+{
+  // Theme — Cursor Dark (vendored: vscode/extensions/cursor-dark)
+  "workbench.colorTheme": "Cursor Dark",
+  "workbench.iconTheme": "vs-seti",
+  "workbench.productIconTheme": "Default",
+  "window.autoDetectColorScheme": false,
+
+  // Cursor-like chrome (debloated)
+  "window.commandCenter": true,
+  "window.titleBarStyle": "custom",
+  "window.density.editorTabHeight": "compact",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.tree.indent": 12,
+  "workbench.tree.renderIndentGuides": "onHover",
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.renderWhitespace": "selection",
+  "editor.renderControlCharacters": false,
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": false,
+  "editor.padding.top": 8,
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 12,
+  "editor.lineHeight": 18,
+  "editor.fontLigatures": false,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.scrollback": 100000,
+
+  // Formatting (match Cursor)
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.requireConfig": false,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "javascript.preferences.includePackageJsonAutoImports": "on",
+
+  // Quiet defaults
+  "update.mode": "silentlyApplyOnQuit",
+  "extensions.ignoreRecommendations": true,
+  "telemetry.telemetryLevel": "off",
+  "workbench.enableExperiments": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3"
+}

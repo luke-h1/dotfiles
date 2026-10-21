@@ -9,7 +9,7 @@ Personal macOS setup, shell config, editor settings, and utility scripts.
 | `mac/dotfiles/` | `.zshrc`, `.zprofile`, `.tmux.conf`, `.gitconfig`, `.ssh/config`, … |
 | `mac/bin/` | `Brewfile`, `starship.toml`, machine `setup.sh` |
 | `cursor/` | Cursor `settings.json` + `keybindings.json` |
-| `vscode/` | VS Code extensions installer + mirrored settings |
+| `vscode/` | Cursor-like VS Code settings, lean `vscode.sh`, vendored Cursor Dark theme |
 | `intellij/` | JetBrains options / keymap / Prettier codestyle |
 | `docker/`, `deploy/`, `aws/` | helper compose files and scripts |
 

@@ -7,8 +7,9 @@
 
 set -euo pipefail
 
-CONFIG_REPO="${DOTFILES_REPO:-$HOME/srv/dev/dotfiles}"
+CONFIG_REPO="${DOTFILES_REPO:-$HOME/srv/dev/devroot/dotfiles}"
 CURSOR_USER="$HOME/Library/Application Support/Cursor/User"
+CODE_USER="$HOME/Library/Application Support/Code/User"
 
 # local_path|repo_path
 pairs=(
@@ -19,6 +20,8 @@ pairs=(
   "$HOME/.config/starship.toml|$CONFIG_REPO/mac/bin/starship.toml"
   "$CURSOR_USER/settings.json|$CONFIG_REPO/cursor/settings.json"
   "$CURSOR_USER/keybindings.json|$CONFIG_REPO/cursor/keybindings.json"
+  "$CODE_USER/settings.json|$CONFIG_REPO/vscode/settings.json"
+  "$CODE_USER/keybindings.json|$CONFIG_REPO/vscode/keybindings.json"
 )
 
 cmd="${1:-diff}"
