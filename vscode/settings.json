@@ -11,6 +11,9 @@
   "window.density.editorTabHeight": "compact",
   "workbench.sideBar.location": "left",
   "workbench.activityBar.orientation": "vertical",
+  // Keep Chat (secondary side bar) closed unless you open it
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "chat.restoreLastPanelSession": false,
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
