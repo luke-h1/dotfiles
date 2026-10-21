@@ -1,0 +1,235 @@
+tap "abue-ammar/tinycast", trusted: true
+tap "hashicorp/tap"
+tap "libsql/sqld", trusted: true
+tap "mobai-app/tap"
+tap "mobile-dev-inc/tap", trusted: true
+tap "tursodatabase/tap"
+tap "twitchdev/twitch"
+tap "weaveworks/tap"
+tap "wix-incubator/brew", "https://github.com/wix-incubator/homebrew-brew.git"
+# Run your GitHub Actions locally
+brew "act"
+# Extremely Fast Compression algorithm
+brew "lz4"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Browser automation CLI for AI agents
+brew "agent-browser"
+# Asciicast to GIF converter
+brew "agg"
+# Fast, lightweight CLI for App Store Connect
+brew "asc"
+# Record and share terminal sessions
+brew "asciinema"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# GNU binary tools for native development
+brew "binutils"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Command-line tool to manipulate Android App Bundles
+brew "bundletool"
+# Object-file caching compiler wrapper
+brew "ccache"
+# Tool for emulating mouse and keyboard events
+brew "cliclick"
+# Cross-platform make
+brew "cmake"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# .NET Core
+brew "dotnet"
+# .NET Core
+brew "dotnet@8"
+# Modern, maintained replacement for ls
+brew "eza"
+# Easiest way to build and release mobile apps
+brew "fastlane"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU awk utility
+brew "gawk"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Highly customizable changelog generator
+brew "git-cliff"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# Fast linters runner for Go
+brew "golangci-lint"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
+# GNU grep, egrep and fgrep
+brew "grep"
+# Command-line interface for Hetzner Cloud
+brew "hcloud"
+# Kubernetes package manager
+brew "helm"
+# Improved top (interactive process viewer)
+brew "htop"
+# Display an interface's bandwidth usage
+brew "iftop"
+# Cost estimates for Terraform, Terragrunt, and CloudFormation
+brew "infracost"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Modern load testing tool, using Go and JavaScript
+brew "k6"
+# Anti-bikeshedding Kotlin linter with built-in formatter
+brew "ktlint"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Library to communicate with iOS devices natively
+brew "libimobiledevice"
+# Mac App Store command-line interface
+brew "mas"
+# Deep clean and optimize your Mac
+brew "mole"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# AI coding agent, built for the terminal
+brew "opencode"
+# Development kit for the Java programming language
+brew "openjdk@17"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# PNG image optimizing utility
+brew "pngquant"
+# Python version management
+brew "pyenv"
+# Powerful, clean, object-oriented scripting language
+brew "ruby@3.3"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Autoformat shell script source code
+brew "shfmt"
+# Command-line tool to customize Spotify client
+brew "spicetify-cli"
+# Formatting tool for reformatting Swift code
+brew "swiftformat"
+# Tool to enforce Swift style and conventions
+brew "swiftlint"
+# Terminal multiplexer
+brew "tmux"
+# Watch files and take action when they change
+brew "watchman"
+# Little beautifier tool for xcodebuild
+brew "xcbeautify"
+# Build server protocol implementation for integrating Xcode with sourcekit-lsp
+brew "xcode-build-server"
+# Generate your Xcode project from a spec file and your folder structure
+brew "xcodegen"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Run more iOS, tvOS, watchOS, and visionOS simulators on one Mac by disabling unneeded background daemons
+brew "mobai-app/tap/simslim", trusted: true
+# The easiest way to automate UI testing for your mobile app
+brew "mobile-dev-inc/tap/maestro", link: false, trusted: true
+brew "tursodatabase/tap/turso", trusted: true
+# CLI for Twitch's developer offerings
+brew "twitchdev/twitch/twitch-cli", trusted: true
+# Command-line interface for 1Password
+cask "1password-cli"
+# Securely stores and accesses AWS credentials in a development environment
+cask "aws-vault-binary"
+# Terminal-based AI coding assistant
+cask "claude-code@latest"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# Emulator to play GameCube and Wii games
+cask "dolphin"
+# UI toolkit for building applications for mobile, web and desktop
+cask "flutter"
+cask "font-jetbrains-mono-nerd-font"
+# Menu bar manager
+cask "jordanbaird-ice"
+# AI agent command center
+cask "maestro"
+# GameStream client
+cask "moonlight"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# Multi-platform VNC client and server
+cask "tigervnc"
+# Tiny, fully native launcher, hotkeys, and clipboard history
+cask "abue-ammar/tinycast/tinycast"
+# Rust-based terminal
+cask "warp"
+# Wine wrapper built with SwiftUI
+cask "whisky"
+# YouTube music client
+cask "ytmdesktop-youtube-music"
+mas "DevCleaner", id: 1388020431
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "WhatsApp", id: 310633997
+mas "Xcode", id: 497799835
+vscode "antfu.slidev"
+vscode "anthropic.claude-code"
+vscode "astro-build.astro-vscode"
+vscode "blazejkustra.react-compiler-marker"
+vscode "christian-kohler.path-intellisense"
+vscode "dart-code.dart-code"
+vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
+vscode "ecmel.vscode-html-css"
+vscode "esbenp.prettier-vscode"
+vscode "expo.vscode-expo-tools"
+vscode "formulahendry.auto-rename-tag"
+vscode "golang.go"
+vscode "gruntfuggly.todo-tree"
+vscode "hashicorp.terraform"
+vscode "kamikillerto.vscode-colorize"
+vscode "llvm-vs-code-extensions.lldb-dap"
+vscode "mikestead.dotenv"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "pranaygp.vscode-css-peek"
+vscode "prisma.prisma"
+vscode "redhat.java"
+vscode "redhat.vscode-yaml"
+vscode "simonsiefke.svg-preview"
+vscode "sswg.swift-lang"
+vscode "styled-components.vscode-styled-components"
+vscode "swiftlang.swift-vscode"
+vscode "tomiturtiainen.rf-intellisense"
+vscode "vscode-icons-team.vscode-icons"
+vscode "vue.volar"
+vscode "wayou.vscode-todo-highlight"
+vscode "zignd.html-css-class-completion"
+go "golang.org/x/tools/gopls"
+uv "commitizen"
+uv "pre-commit"
+npm "@callstack/tracesift"
+npm "@swmansion/argent"
+npm "agent-cdp"
+npm "agent-device"
+npm "appium"
+npm "corepack"
+npm "eas-cli"
+npm "gnhf"

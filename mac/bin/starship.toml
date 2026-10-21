@@ -1,0 +1,186 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Catppuccin Mocha powerline
+add_newline = true
+command_timeout = 1000
+
+format = """
+[](surface0)\
+$os\
+$username\
+[](bg:mauve fg:surface0)\
+$directory\
+[](fg:mauve bg:blue)\
+$git_branch\
+$git_status\
+[](fg:blue bg:teal)\
+$nodejs\
+$bun\
+$deno\
+$golang\
+$rust\
+$python\
+$ruby\
+$dotnet\
+$java\
+$swift\
+[](fg:teal bg:peach)\
+$docker_context\
+$kubernetes\
+[](fg:peach bg:surface1)\
+$cmd_duration\
+[](fg:surface1)\
+$line_break\
+$character"""
+
+palette = 'catppuccin_mocha'
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo  = "#f2cdcd"
+pink      = "#f5c2e7"
+mauve     = "#cba6f7"
+red       = "#f38ba8"
+maroon    = "#eba0ac"
+peach     = "#fab387"
+yellow    = "#f9e2af"
+green     = "#a6e3a1"
+teal      = "#94e2d5"
+sky       = "#89dceb"
+sapphire  = "#74c7ec"
+blue      = "#89b4fa"
+lavender  = "#b4befe"
+text      = "#cdd6f4"
+subtext0  = "#a6adc8"
+overlay0  = "#6c7086"
+surface2  = "#585b70"
+surface1  = "#45475a"
+surface0  = "#313244"
+base      = "#1e1e2e"
+crust     = "#11111b"
+
+[os]
+disabled = false
+style = "bg:surface0 fg:text"
+format = '[ $symbol ]($style)'
+
+[os.symbols]
+Macos = ""
+
+[username]
+show_always = true
+style_user = "bg:surface0 fg:text"
+style_root = "bg:surface0 fg:red"
+format = '[$user ]($style)'
+
+[directory]
+style = "fg:crust bg:mauve"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " "
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Developer" = " "
+"srv" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol $branch ](fg:crust bg:blue)]($style)'
+
+[git_status]
+style = "bg:blue"
+format = '[[($all_status$ahead_behind )](fg:crust bg:blue)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:crust bg:teal)]($style)'
+
+[bun]
+symbol = "🥟"
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:crust bg:teal)]($style)'
+
+[deno]
+symbol = "🦕"
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:crust bg:teal)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:crust bg:teal)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:crust bg:teal)]($style)'
+
+[python]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:crust bg:teal)]($style)'
+
+[ruby]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:crust bg:teal)]($style)'
+
+[dotnet]
+symbol = "󰪮"
+style = "bg:teal"
+format = '[[ $symbol( $tfm) ](fg:crust bg:teal)]($style)'
+
+[java]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:crust bg:teal)]($style)'
+
+[swift]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:crust bg:teal)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:peach"
+format = '[[ $symbol( $context) ](fg:crust bg:peach)]($style)'
+only_with_files = true
+
+[kubernetes]
+symbol = "󱃾"
+style = "bg:peach"
+format = '[[ $symbol( $context) ](fg:crust bg:peach)]($style)'
+disabled = false
+# only surface k8s context inside projects that actually use it
+detect_files = ['k8s.yaml', 'skaffold.yaml', 'Chart.yaml', 'kustomization.yaml']
+detect_folders = ['k8s', 'kubernetes', 'charts', 'helm']
+detect_extensions = []
+
+# collapse long ARNs down to just the cluster name
+[[kubernetes.contexts]]
+context_pattern = "arn:aws:eks:(?P<region>[\\w-]+):\\d+:cluster/(?P<cluster>[\\w-]+)"
+context_alias = "$cluster"
+
+[[kubernetes.contexts]]
+context_pattern = "gke_.*_(?P<cluster>[\\w-]+)"
+context_alias = "$cluster"
+
+[cmd_duration]
+min_time = 2000
+style = "bg:surface1"
+format = '[[  $duration ](fg:text bg:surface1)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+vimcmd_symbol = '[❮](bold mauve)'

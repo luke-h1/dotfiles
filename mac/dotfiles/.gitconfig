@@ -1,0 +1,26 @@
+[user]
+	name = luke-h1
+	email = luke.howsam@yahoo.com
+[github]
+	user = luke-h1
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[core]
+	pager = delta
+	excludesfile = ~/.gitignore_global
+	fsmonitor = false
+	untrackedCache = true
+	usebuiltinfsmonitor = false
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = false
+	syntax-theme = Catppuccin Mocha
+[merge]
+	conflictstyle = zdiff3
+[diff]
+	colorMoved = default
