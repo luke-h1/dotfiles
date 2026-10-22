@@ -65,6 +65,15 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // OXC / oxlint only start when a workspace folder has an oxlint config.
+  // Oxfmt repos (e.g. foam) override the formatter in .vscode/settings.json.
+  "oxc.requireConfig": true,
+  "oxc.enable.oxlint": true,
+  "oxc.enable.oxfmt": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
   "prettier.requireConfig": false,
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,

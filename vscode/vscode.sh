@@ -35,6 +35,7 @@ echo "Installing lean extensions…"
 # Core editing
 install esbenp.prettier-vscode
 install dbaeumer.vscode-eslint
+install oxc.oxc-vscode
 install mikestead.dotenv
 install eamodio.gitlens
 install redhat.vscode-yaml

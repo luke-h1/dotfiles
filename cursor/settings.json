@@ -29,10 +29,19 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  // OXC / oxlint only start when the workspace has an oxlint config.
+  // OXC / oxlint only start when a workspace folder has an oxlint config
+  // (oxlint.config.ts / .oxlintrc.json). Foam and other oxc repos pick this up
+  // automatically in the multi-root devroot workspace.
   "oxc.requireConfig": true,
   "oxc.enable.oxlint": true,
   "oxc.enable.oxfmt": true,
+  // Lint autofix on save (oxlint). Formatting still goes through
+  // editor.formatOnSave + the folder's defaultFormatter (oxc in foam,
+  // Prettier elsewhere).
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
   "terminal.integrated.scrollback": 100000,
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
   "claudeCode.preferredLocation": "sidebar",
